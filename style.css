@@ -1,0 +1,263 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;  
+}
+
+body {
+  font-family: "Bodoni Moda", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: darkgray;
+}
+
+/* PROFILE PIC */
+.section__pic-container img {
+  border-radius: 50%;
+  margin-left: 950px; 
+  border-radius: 50%;
+}
+
+
+img {
+  border-radius: 0;
+}
+
+/*TRANSITION */
+
+a, .btn {
+  transition: all 300ms ease;
+}
+
+/*DESKTOP */
+
+nav, 
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: rgb(6, 6, 6);
+  text-decoration: none;
+  text-decoration-color: antiquewhite;
+}
+
+a:hover {
+  color: rgb(255,127,80);
+  text-underline-offset: 1rem;
+  text-decoration-color: coral;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+.button {
+  border: none;
+  color: white;
+  background-color: coral;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section_text {
+  position: absolute; 
+  top: 0; 
+  left: 200px; 
+  padding: 200px; 
+  font-size: xxx-large;
+}
+
+.section_text p {
+  font-weight: 600;
+}
+
+#social-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+  padding-top: 60px; 
+  min-height: 100vh;  
+}
+
+/* FLEXBOX*/
+.about-flex {
+  display: flex;
+  gap: 25px; 
+  align-items: center; 
+  padding: 200px; 
+  margin-top: 0; 
+}
+
+.quote {
+  flex: 1; 
+  font-size: 48px; 
+  font-weight: bold; 
+}
+
+.experiences {
+  flex: 1; 
+  font-size: 16px; 
+  line-height: 1.6; 
+}
+
+/* WORK SECTION */
+
+#work {
+  position: relative;
+  padding-top: 1px; 
+  min-height: 15vh; 
+  background-image: url('ASSETS2/ASSETS2/background_img.png'); 
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  z-index: 0;
+  text-align: center;
+}
+
+#work .work-title {
+  font-size: 2.5rem; 
+  margin-bottom: 20px;
+  color: #fff; 
+}
+#work .about-flex {
+  position: relative;
+  z-index: 1; 
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  align-items: center; 
+
+#work .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: 20px; 
+}
+
+#work .grid img {
+  width: 100%;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid img {
+  width: 100%;
+}
+
+/* CONTACT FORM */
+
+
+#contact {
+  position: relative;
+  padding-top: 60px; 
+  min-height: 1000vh; 
+}
+
+.contact-form {
+  margin-top: 400px;
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 80px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid coral;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  border: none;
+  color: white;
+  background-color: coral;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+
