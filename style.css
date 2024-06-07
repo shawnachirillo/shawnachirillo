@@ -169,13 +169,14 @@ section {
 #work {
   position: relative;
   padding-top: 1px; 
-  min-height: 15vh; 
-  background-image: url('ASSETS2/ASSETS2/background_img.png'); 
+  min-height: 105vh; 
   background-size:cover;
   background-position: center;
   width: 100%;
   z-index: 0;
   text-align: center;
+  background-image: url('background_img.png');
+  background-size: 100% 100%;
 }
 
 #work .work-title {
@@ -190,6 +191,7 @@ section {
   justify-content: center;
   gap: 25px;
   align-items: center; 
+}
 
 #work .grid {
   display: grid;
@@ -219,32 +221,37 @@ section {
 #contact {
   position: relative;
   padding-top: 60px; 
-  min-height: 1000vh; 
+  min-height: 100vh; 
 }
 
 .contact-form {
-  margin-top: 400px;
+  margin-top: 4px;
+
 }
 
 .contact-form h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  color: black
 }
 
 .contact-form label {
-  display: block;
+
   margin-bottom: 80px;
   font-weight: bold;
+  border: .5px solid coral;
+  border-radius: 15%;
 }
 
-.contact-form input,
-.contact-form textarea {
+
+textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid coral;
   border-radius: 4px;
   box-sizing: border-box;
+ 
 }
 
 .contact-form button {
@@ -259,5 +266,4 @@ section {
   cursor: pointer;
   border-radius: 12px;
 }
-
 
